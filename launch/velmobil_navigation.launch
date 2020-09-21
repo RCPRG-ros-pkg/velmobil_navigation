@@ -55,7 +55,7 @@
 	<!-- run map server -->
 	<node name="map_server" pkg="map_server" type="map_server"  args="$(arg map_name) _frame_id:=map"/>
 	<!-- run move_base -->
-	<node pkg="move_base" type="move_base" respawn="false" name="move_base_node" output="screen">   
+	<node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">   
 	    <rosparam file="$(find velmobil_navigation)/params/global_costmap.yaml" command="load" ns="global_costmap" />
 	    <rosparam file="$(find velmobil_navigation)/params/local_costmap.yaml" command="load" ns="local_costmap" />
 	    <rosparam file="$(find velmobil_navigation)/params/local_planner.yaml" command="load" />

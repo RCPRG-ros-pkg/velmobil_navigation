@@ -3,9 +3,11 @@
     <map_context name="sim" map_param_filename="simple_test_map.yaml" map_filename="simple_test_map.pgm" >
         <volumetric_mask filename="img/places_mask.png" />
 
-        <point_place id="szafka" name="szafka" position="0.55 -0.3" front_vec="1 0" />
-        <point_place id="stolik" name="stolik" position="1 -0.2" front_vec="1 0" />
-        <point_place id="init" name="init" position="0 0" front_vec="1 0" />
+        <point_place id="szafka" name="szafka" position="3.45 -0.25" front_vec="1 0" />
+        <point_place id="stolik" name="stolik" position="0.354 1.522" front_vec="0 1" />
+        <point_place id="init" name="init" position="0 0" front_vec="1 0" />help_to_open
+        <point_place id="take_out_pose" name="take_out_pose" position="3.45 0.25" front_vec="1 0" />
+        <point_place id="help_to_open" name="help_to_open" position="3.45 -0.3" front_vec="1 0" />
     </map_context>
 
 </places>

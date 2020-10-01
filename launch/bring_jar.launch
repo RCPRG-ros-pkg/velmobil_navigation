@@ -1,0 +1,11 @@
+<launch>
+	<!-- launch velma simulation -->
+	<include file="$(find velmobil_navigation)/launch/velmobil_navigation.launch" />
+
+	<!-- run tf broadcaster of objects: stolik, szafka, jar -->
+	<node name="object_marker_broadcaster" pkg="velmobil_navigation" type="object_marker"/>
+
+	<!-- run configured rviz -->
+	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find velmobil_navigation)/rviz/bring_jar.rviz"/>
+
+</launch>

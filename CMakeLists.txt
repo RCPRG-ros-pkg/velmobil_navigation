@@ -220,8 +220,8 @@ include_directories(
 #target_link_libraries(driver ${catkin_LIBRARIES})
 #add_dependencies(driver driver_generate_messages_cpp)
 
-#catkin_install_python(PROGRAMS scripts/object_marker
-#                      DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
+catkin_install_python(PROGRAMS scripts/object_marker
+                      DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
 
 install (DIRECTORY worlds/ DESTINATION share/${CMAKE_PROJECT_NAME}/worlds 
          FILES_MATCHING PATTERN "*.world")

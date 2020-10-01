@@ -2,7 +2,6 @@
 	<arg name="world_name" default="$(find velmobil_navigation)/data/gazebo/worlds/simple_test_world.world" />
 	<arg name="map_name" default="$(find velmobil_navigation)/map/simple_test_map.yaml" />
 
-	<param name="/kb_places_xml" type="string" value="$(find velmobil_navigation)/map/places.xml" />
 	<param name="/sim_mode" type="string" value="gazebo" />
 <!--
 	<rosparam command="load" file="$(find velmobil_navigation)/params/global_costmap.yaml" ns="/move_base/global_costmap"/>

@@ -228,5 +228,5 @@ install (DIRECTORY worlds/ DESTINATION share/${CMAKE_PROJECT_NAME}/worlds
          FILES_MATCHING PATTERN "*.world")
 install (DIRECTORY launch/ DESTINATION share/${CMAKE_PROJECT_NAME}/launch 
          FILES_MATCHING PATTERN "*.launch*")
-install (DIRECTORY config/ DESTINATION share/${CMAKE_PROJECT_NAME}/config 
+install (DIRECTORY params/ DESTINATION share/${CMAKE_PROJECT_NAME}/params 
          FILES_MATCHING PATTERN "*.yaml")

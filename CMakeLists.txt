@@ -224,9 +224,9 @@ install(DIRECTORY data/
 #target_link_libraries(driver ${catkin_LIBRARIES})
 #add_dependencies(driver driver_generate_messages_cpp)
 
-install (DIRECTORY worlds/ DESTINATION share/${CMAKE_PROJECT_NAME}/worlds 
-         FILES_MATCHING PATTERN "*.world")
+install (DIRECTORY data/ DESTINATION share/${CMAKE_PROJECT_NAME}/data )
 install (DIRECTORY launch/ DESTINATION share/${CMAKE_PROJECT_NAME}/launch 
          FILES_MATCHING PATTERN "*.launch*")
 install (DIRECTORY params/ DESTINATION share/${CMAKE_PROJECT_NAME}/params 
          FILES_MATCHING PATTERN "*.yaml")
+install (DIRECTORY map/ DESTINATION share/${CMAKE_PROJECT_NAME}/map )
